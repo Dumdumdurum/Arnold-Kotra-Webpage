@@ -1,0 +1,63 @@
+.pulser {
+    width: 90vmin;
+    height: 90vmin;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    background: #d84578;
+    position: absolute;
+    transform-origin: 42vmin 48vmin;
+    animation: filtered 10000ms 0ms infinite alternate linear;
+    will-change: filter, transform;
+}
+#animation {
+    width: 90vmin;
+    height: 90vmin;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+body {
+    background: #042739;
+    min-height: 100vh;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+
+@keyframes filtered {
+    0% {
+        filter: hue-rotate(0deg) blur(3vmin);
+    }
+    100% {
+        filter: hue-rotate(360deg) blur(20vmin);
+    }
+}
+#about {
+    margin-left: 3vw;
+    font-size: 30px;
+    font-family: Conv_Graphik-Regular;
+    color: white;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-right: auto;
+}
+.bottom{
+    width: 45vw;
+    font-size: 30px;
+    font-family: Conv_Graphik-Regular;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Conv_Graphik-Regular';
+    src: url('fonts/Graphik-Regular.eot');
+    src: local('☺'), url('fonts/Graphik-Regular.woff') format('woff'), url('fonts/Graphik-Regular.ttf') format('truetype'), url('fonts/Graphik-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
