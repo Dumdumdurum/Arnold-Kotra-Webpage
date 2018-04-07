@@ -47,11 +47,20 @@ body {
   align-self: flex-start;
   margin-right: auto;
 }
-.bottom{
+.top{
+  margin-left: 3vw;
+  height: 100vh;
+  position: absolute;
   width: 45vw;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+.bottom{
   font-size: 30px;
   font-family: Conv_Graphik-Regular;
   color: white;
+  align-self: flex-end;
 }
 
 @font-face {
