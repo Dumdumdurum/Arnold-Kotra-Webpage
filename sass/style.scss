@@ -30,6 +30,10 @@ body {
   }
 }
 #about {
+  @media (max-width: 700px){
+    font-size: 22px;
+    width: 100vw;
+  }
   margin-left: 3vw;
   font-size: 31px;
   font-family: Conv_Graphik-Regular;
@@ -42,9 +46,14 @@ body {
   position: absolute;
 }
 .top{
+  @media (max-width: 700px){
+    font-size: 22px;
+    width: 100vw;
+  }
   margin-left: 3vw;
-  height: 100vh;
   position: absolute;
+  bottom: 0;
+  left: 0;
   width: 35vw;
   display: flex;
   justify-content: flex-end;
