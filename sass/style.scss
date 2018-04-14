@@ -12,7 +12,7 @@ body {
 #about {
   @media (max-width: 700px){
     font-size: 22px;
-    width: 100vw;
+    width: 95vw;
   }
   margin-left: 3vw;
   font-size: 31px;
@@ -28,7 +28,7 @@ body {
 .top{
   @media (max-width: 700px){
     font-size: 22px;
-    width: 100vw;
+    width: 95vw;
   }
   margin-left: 3vw;
   position: absolute;
@@ -40,6 +40,9 @@ body {
   align-content: flex-end;
 }
 .bottom{
+  @media (max-width: 700px) {
+    font-size: 22px;
+  }
   font-size: 31px;
   font-family: Conv_Graphik-Regular;
   color: white;
