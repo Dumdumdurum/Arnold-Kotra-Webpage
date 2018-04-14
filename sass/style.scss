@@ -1,14 +1,3 @@
-.pulser {
-  width: 90vmin;
-  height: 90vmin;
-  border-radius: 50%;
-  mix-blend-mode: screen;
-  background: #d84578;
-  position: absolute;
-  transform-origin: 42vmin 48vmin;
-  animation: filtered 10000ms 0ms infinite alternate linear;
-  will-change: filter, transform;
-}
 body {
   display: flex;
   align-items: center;
@@ -19,15 +8,6 @@ body {
 }
 * {
   box-sizing: border-box;
-}
-
-@keyframes filtered {
-  0% {
-    filter: hue-rotate(0deg) blur(3vmin);
-  }
-  100% {
-    filter: hue-rotate(360deg) blur(20vmin);
-  }
 }
 #about {
   @media (max-width: 700px){
@@ -80,7 +60,7 @@ ul {
 #gradient
 {
   width: 100%;
-  height: 800px;
+  height: 100vh;
   padding: 0px;
   margin: 0px;
 }
